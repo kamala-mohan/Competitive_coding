@@ -27,7 +27,8 @@ int main(){
 	cin>>n;
 	int arr[n];
 	for(int i=0;i<n;i++) cin>>arr[i];
-	cout<<maj_Ele(arr,n)<<endl;
+	cout<<maj_Ele(arr,n);
+    cout<<endl;
 
 	return 0;
 }
