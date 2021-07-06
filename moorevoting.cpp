@@ -28,7 +28,8 @@ int main(){
 	int arr[n];
 	for(int i=0;i<n;i++) cin>>arr[i];
 	cout<<maj_Ele(arr,n);
-    cout<<endl;
+    cout<<endl;                     //this has been changed by kamala
+    
 
 	return 0;
 }
