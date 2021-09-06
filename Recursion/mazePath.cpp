@@ -13,8 +13,9 @@ void mazePath(int i,int j,int n,int m,string osf){
 		return;                  //base case2 wen its out of bound
 	}
 
-	mazePath(i,j+1,n,m,osf + "r");  //this appends a right to recursive path
+	mazePath(i,j+1,n,m,osf + "r"); //this appends a right to recursive path
 	mazePath(i+1,j,n,m,osf + "d"); //this appends a  down to the recusrsive path
+	mazePath(i+1,j+1,n,m,osf+"w"); //this appends a "diagonal" to all the diagonal paths
 
 }
 
@@ -23,5 +24,6 @@ int main(){
 	cin>>n>>m;
 	int **arr = new int*[m]; //array of pointers
 	mazePath(0,0,n,m,"");
+	cout<<"Total paths = "<<totalPaths<<endl;
 	return 0; 
 }
