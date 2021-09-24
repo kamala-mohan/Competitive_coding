@@ -14,7 +14,7 @@ void print(unordered_map<int,string> &m)
 int main(){
 	//declaration
 	unordered_map<int,string> m;
-	m[1] = "abc";  
+	m[0] = "abc";  
 	m[5] = "cdc"; 
 	m[3] = "acd";
 	print(m);
